@@ -1,6 +1,6 @@
 package com.marcel.test.chat.chat;
 
-public enum MesageType {
+public enum MessageType {
 
     CHAT,
     JOIN,

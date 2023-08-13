@@ -2,7 +2,7 @@ package com.marcel.test.chat.config;
 
 
 import com.marcel.test.chat.chat.ChatMessage;
-import com.marcel.test.chat.chat.MesageType;
+import com.marcel.test.chat.chat.MessageType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.event.EventListener;
@@ -26,7 +26,7 @@ public class WebSocketEventListener {
         if (username != null) {
             log.info("User disconnected: {}", username);
             var chatMessage = ChatMessage.builder()
-                    .type(MesageType.LEAVE)
+                    .type(MessageType.LEAVE)
                     .sender(username)
                     .build();
             messageTemplate.convertAndSend("/topic/public",chatMessage);
