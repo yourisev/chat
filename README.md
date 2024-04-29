@@ -1,5 +1,5 @@
 # chat
-First SpringBoot Web Socket Project, Building a Simple Chat App
+SpringBoot Web Socket Project, Building a Simple Chat App
 Here we have a front end in HTML/CSS and JavaScript. Users have to
 be added to the chat to be able to see the messages in this chat.
 ![image](https://github.com/yourisev/chat/assets/69630866/b18aad0e-1dfa-4c42-b94b-7f0357a768be)
